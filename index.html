@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05.05.25 </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="intro-screen" id="introScreen">
+    <h1> Doğum Günün Kutlu Olsun Sevgilim ♥️</h1>
+    <button onclick="startSite()">Başlayalım!</button>
+  </section>
+  
+  <section class="hero">
+    <button class="scroll-button" onclick="scrollToContent()">⏬ </button>
+  </section>  
+
+  <section class="timeline">
+    <h2>Benim Gözümden "En"ler</h2>
+    <div class="memory" onclick="showMemory('favDate')">📍 En Sevdiğimiz Date Mekanı</div>
+    <div class="memory" onclick="showMemory('favFotoğraf')">📷 En Güzel Zeynep Fotoğrafı</div>
+    <div class="memory" onclick="showMemory('favMem')">🤝 En Sevdiğim Anımız</div>
+    <div class="memory" onclick="showMemory('smile')">🫠 En Güzel Gülüşün</div>
+  </section>
+
+  <section class="timeline">
+    <h2>Prime Time</h2>
+    <div class="memory" onclick="showMemory('prime')">📷 Tıkla</div>
+  </section>
+
+  
+
+  <section class="love-letter">
+    <h2>💌 05.05.25</h2>
+    <button onclick="showLetter()">Mektubu Aç</button>
+  </section>
+  
+  <section class="letter-popup" id="letterPopup">
+    <div class="letter-content">
+      <p id="letterText">
+        Zeynebim, sevgilim,  
+        18 yıldır,evet küçüğüm ne var,bu hayat bana bir sürü şey öğretti ama içlerinden en güzeli seni sevmek.  
+        Seninle geçen her an bir mucizeydi. Başından sonuna, tartışmasız. İyisiyle kötüsüyle, tatlısıyla acısıyla hâlâ inanamadığım bir deneyimdi. 
+        Her şey bitmiş gibi yazıyorum çünkü bu siteye her şey bittiğinde de girmeni istiyorum. Burayı tasarlarken aklımda tek bir şey vardı: Bu yaşadıklarımız benim nezdimde eşine benzerine rastlanması güç bir aşk hikayesiydi 
+        o yüzden bu anıların unutulmasını istemedim. Biraz da bencilce geldi senin doğum gününde ikimizle ilgili bir şey yapmak, o yüzden asıl hediyeni almışsındır çoktan :) 
+        Uzun lafın kısası, seni emin ol anlama kapasitenin yetmeyeceği kadar çok seviyorum. 
+        İyi ki doğdun sevgilim, iyi ki hayatımdasın.   
+
+        – Sana Aşık Bir Adam
+      </p>
+      <button onclick="closeLetter()">Kapat</button>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>🎥 Arkadaşlar..</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        Tarayıcın videoyu desteklemiyor.
+      </video>
+    </div>
+  </section>
+
+  <section class="build-process">
+    <h2>🎬 Yapım Süreci</h2>
+    <p>Eeee Zeynep Hanım, bu websitesini yapmak kolay olmadı. İşte çektiğim cefalar... (hepsi sana değer tabii bebeğim orası ayrı)</p>
+    <div class="video-container">
+      <video controls>
+        <source src="yapim.mp4" type="video/mp4">
+        Videoyu göremiyorsan tarayıcını güncelle aşkım 😄
+      </video>
+    </div>
+  </section>  
+
+ <section class="surprise">
+  <h2>Minik Bir Quiz</h2>
+  <button onclick="startQuiz()">Tıkla</button>
+</section>
+
+<section class="quiz-popup" id="quizPopup">
+  <div class="quiz-box">
+    <h2>Zeynep’i Ne Kadar Tanıyoruz? 💭</h2>
+    <h3 id="quizQuestion">Soru buraya gelecek</h3>
+    <div id="quizAnswers"></div>
+    <p id="quizFeedback"></p>
+    <button id="nextBtn" onclick="nextQuestion()">Sonraki Soru</button>
+    <button onclick="closeQuiz()">Kapat</button>
+  </div>
+</section>
+
+<section class="playlist-section">
+  <h2>🎶 Biraz Da Müzik</h2>
+  <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/5aZIdxX7ZzRXWKsAjXM5Wi?si=f9ae9ffd6a434c78?utm_source=generator" 
+    width="100%" height="352" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+</section>
+  
+  
+  
+
+  <section class="memory-popup" id="memoryPopup">
+    <div id="memoryContent"></div>
+    <button onclick="closePopup()">Kapat</button>
+  </section>
+
+  <section class="closing-message">
+    <h2>💖 Sonsuz Teşekkürler</h2>
+    <p>Hayatımda olduğun, dertlerimle dertlendiğin, mutluluklarımla mutlu olduğun için sonsuz teşekkür ederim.</p>
+    <p>Yüzün gülsün diye hazırladığım bu sayfanın sonunda şunu demek istiyorum: Ben varım ya da yokum, nolursun hep gül.</p>
+    <p>Hep gül çünkü gülüşün bir mucize gibi. Unutuma: Bu adam hep seni, seni sevecek. </p>
+    <p>– Ali Hakan Yıldız</p>
+    <p>15.03.2025-26.04.2025</p>
+  </section>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

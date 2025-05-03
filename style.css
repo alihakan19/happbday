@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff0f5;
+    color: #333;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('arkaplan.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .hero-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    font-weight: normal;
+    color: #6a0c35;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    animation: fadeInText 2.5s ease-out;
+  }
+  
+  
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  
+  
+  .scroll-hint {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .timeline {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .timeline h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .memory {
+    background-color: #ffe0e9;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .memory:hover {
+    background-color: #ffc2d4;
+  }
+  
+  .memory-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .memory-popup.active {
+    display: flex;
+  }
+  
+  .memory-popup button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .love-letter {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff0f5;
+  }
+  
+  .love-letter button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .love-letter button:hover {
+    background-color: #ff4f81;
+  }
+  
+  .letter-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .letter-popup.active {
+    display: flex;
+  }
+  
+  .letter-content {
+    background: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .letter-content button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .video-section {
+    padding: 3rem 2rem;
+    background-color: #fff0f5;
+    text-align: center;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .video-container video {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .surprise {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffeef3;
+  }
+  
+  .surprise button {
+    padding: 1rem 2rem;
+    background-color: #ff85a2;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .surprise button:hover {
+    background-color: #ff4f81;
+  }
+  
+  .quiz-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .quiz-popup.active {
+    display: flex;
+  }
+  
+  .quiz-box {
+    background-color: white;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 20px;
+    max-width: 700px; /* ← büyüklüğü artırdık */
+    width: 90%;       /* ekran küçükse de taşmasın */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  
+  .quiz-box h2 {
+    color: #ff4f81;
+    margin-top: 0;        /* Yukarı yapışır */
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .quiz-box button {
+    margin: 1rem 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffc2d1;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .quiz-box button:hover {
+    background-color: #ff95a3;
+  }
+  
+  .build-process {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff0f5;
+  }
+  
+  .build-process video {
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .playlist-section {
+    padding: 3rem 2rem;
+    background-color: #fff0f5;
+    text-align: center;
+  }
+  
+  .intro-screen {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #ffe1e8, #fcdde2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+  }
+  
+  .intro-screen h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #ff4f81;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .intro-screen button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: #ff4f81;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .intro-screen button:hover {
+    background-color: #e3396f;
+  }
+  
+  .intro-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .scroll-button {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 133, 162, 0.7); /* ← ŞEFFAFLIK BURADA */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    animation: fadeInButton 2s ease-out 0.5s forwards;
+    opacity: 0;
+    transition: background 0.3s ease;
+  }
+  
+  
+  @keyframes fadeInButton {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  .scroll-button:hover {
+    background-color: #ff4f81;
+  }
+  
+  @keyframes fadeInButton {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .closing-message {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ffe1e8, #ffffff);
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.closing-message h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff4f81;
+}
+
+.closing-message p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
