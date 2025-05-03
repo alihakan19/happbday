@@ -9,9 +9,11 @@ function showMemory(id) {
   if (id === "prime") {
     content.innerHTML = `
       <video controls width="500">
-        <source src="prime.mp4" type="video/mp4">
-        Videoyu göremiyorsan tarayıcını güncelle :)
-      </video>
+        <iframe src="https://drive.google.com/file/d/1Au1CK9M71Eh-j1CaVjoqU5YCL0GdW9AA/preview" 
+                width="500" height="300" allow="autoplay" allowfullscreen
+                style="border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.3);">
+        </iframe>
+      
     `;
   } else if (id === "favMem") {
     content.innerText = `
