@@ -28,7 +28,7 @@ function showMemory(id) {
     content.innerText = "41.04190941511697, 29.003280610789194";
   } else if (id === "smile") {
     content.innerHTML = `
-  <img src="smile.jpg" alt="İlk el tutuş" style="width: 70%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/smile.jpg" alt="İlk el tutuş" style="width: 70%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
   <p style="
     margin-top: 1rem; 
     font-size: 1.3rem; 
@@ -41,7 +41,7 @@ function showMemory(id) {
 `;
   } else if (id === "favFotoğraf"){
     content.innerHTML = `
-  <img src="favFotoğraf.jpg" alt="İlk el tutuş" style="width: 70%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+  <img src="images/favFotoğraf.jpg" alt="İlk el tutuş" style="width: 70%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
   <p style="
     margin-top: 1rem; 
     font-size: 1.3rem; 
