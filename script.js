@@ -7,14 +7,17 @@ function showMemory(id) {
 
   // Anıya göre içerik
   if (id === "prime") {
-    content.innerHTML = `
-      <video controls width="500">
-        <iframe src="https://drive.google.com/file/d/1Au1CK9M71Eh-j1CaVjoqU5YCL0GdW9AA/preview" 
-                width="500" height="300" allow="autoplay" allowfullscreen
-                style="border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.3);">
-        </iframe>
-      
-    `;
+  content.innerHTML = `
+    <iframe src="https://drive.google.com/file/d/1Au1CK9M7lEh-j1CaVjoqU5YCL0GdW9AA/preview"
+            width="500" height="300" allow="autoplay" allowfullscreen
+            style="border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.3);">
+    </iframe>
+    <p style="text-align:center; font-size: 1.1rem; margin-top: 10px; color: #fff;">
+      Videoyu göremiyorsan Drive paylaşımı herkese açık mı kontrol et :)
+    </p>
+  `;
+
+
   } else if (id === "favMem") {
     content.innerText = `
     En sevdiğim anımız... Hmmm... O kadar eğlendik ki seninle, o kadar birbirinden saçma ama bir o kadar da eğlenceli anı paylaştık ki. 
