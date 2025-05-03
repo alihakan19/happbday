@@ -12,9 +12,7 @@ function showMemory(id) {
             width="500" height="300" allow="autoplay" allowfullscreen
             style="border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.3);">
     </iframe>
-    <p style="text-align:center; font-size: 1.1rem; margin-top: 10px; color: #fff;">
-      Videoyu göremiyorsan Drive paylaşımı herkese açık mı kontrol et :)
-    </p>
+    
   `;
 
 
