@@ -159,7 +159,7 @@ function showMemory(id) {
   
     if (selected === q.correct) {
       score++;
-      feedback.innerText = "AYNENSS";
+      feedback.innerText = "DOĞRU";
     } else {
       feedback.innerText = "O olur mu aşkım?!";
     }
