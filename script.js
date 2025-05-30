@@ -81,6 +81,13 @@ function showMemory(id) {
   function closeLetter() {
     document.getElementById("letterPopup").classList.remove("active");
   }
+  function showLetter() {
+    document.getElementById("letterPopup2").classList.add("active");
+  }
+  
+  function closeLetter() {
+    document.getElementById("letterPopup2").classList.remove("active");
+  }
   function openQuiz() {
     document.getElementById("quizPopup").classList.add("active");
     document.getElementById("quizResult").innerText = "";
