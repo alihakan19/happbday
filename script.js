@@ -74,18 +74,18 @@ function showMemory(id) {
   function closePopup() {
     document.getElementById('memoryPopup').classList.remove('active');
   }
-  function showLetter() {
+  function showLetter1() {
     document.getElementById("letterPopup").classList.add("active");
   }
   
-  function closeLetter() {
+  function closeLetter1() {
     document.getElementById("letterPopup").classList.remove("active");
   }
-  function showLetter() {
+  function showLetter2() {
     document.getElementById("letterPopup2").classList.add("active");
   }
   
-  function closeLetter() {
+  function closeLetter2() {
     document.getElementById("letterPopup2").classList.remove("active");
   }
   function openQuiz() {
